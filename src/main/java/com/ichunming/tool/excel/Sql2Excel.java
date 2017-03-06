@@ -26,15 +26,15 @@ import org.slf4j.LoggerFactory;
 
 import com.ichunming.tool.util.ExcelUtil;
 
-public class ExcelTool {
+public class Sql2Excel {
 	
-	private static final Logger logger = LoggerFactory.getLogger(ExcelTool.class);
+	private static final Logger logger = LoggerFactory.getLogger(Sql2Excel.class);
 	public static final String TABLE_NAME_REG = "`(.)*`";
 	public static final String ITEM_NAME_REG = "`(.)*`";
 	
 	public static void main(String[] args) throws Exception {
-		String sqlFilePath = "D:/doc/table_sql/sys_job_error_log.sql";
-		String saveFilePath = "D:/doc/table_sql/sys_job_error_log.xls";
+		String sqlFilePath = "D:/doc/table_sql/sys_message.sql";
+		String saveFilePath = "D:/doc/table_sql/sys_message.xls";
 		
 		File sqlFile = new File(sqlFilePath);
 		BufferedReader br = new BufferedReader(new FileReader(sqlFile));

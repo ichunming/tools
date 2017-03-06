@@ -357,7 +357,7 @@ public class ExcelUtil {
 			method.invoke(obj, param);
 		}
 		
-		logger.debug("success to convert excel file to object list");
+		logger.debug("success to convert excel file to object");
 		return obj;
 	}
 	
